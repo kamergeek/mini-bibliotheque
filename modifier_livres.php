@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'navbar.php';
 require 'connexion.php';
 
 if (!isset($_SESSION['role'])) {

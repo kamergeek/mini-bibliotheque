@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+require 'navbar.php';
 require 'connexion.php';
 
 
@@ -20,7 +21,8 @@ $user =$stmt->fetch();
 		$_SESSION['login']=$user['login'];
 		$_SESSION['role']=$user['role'];
 
-		echo "connexion réussi !bienvenue ".$user['login']."(".$user['role'].")";
+		header("location:livres.php");
+        exit;
 	}else{
 		echo "login ou mot de passe incorrect.";
 	}
