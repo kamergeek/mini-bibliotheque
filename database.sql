@@ -1,6 +1,3 @@
-CREATE DATABASE IF NOT EXISTS mini_bibliotheque;
-USE mini_bibliotheque;
-
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     login VARCHAR(50) NOT NULL UNIQUE,
